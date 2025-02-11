@@ -1,5 +1,5 @@
 import React from 'react';
-import fontAwesomeStyles from '../styles/FontAwesome.module.css';
+import fontAwesomeStyles from '../../styles/FontAwesome.module.css';
 
 const Footer = () => {
   return (

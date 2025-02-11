@@ -1,0 +1,112 @@
+.pageWrapper {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.header {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007bff;
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.Input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.Button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: none;
+}
+
+.Button:hover {
+    background-color: #0056b3;
+}
+
+.SignUpCol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SignUpCol .fillerImage {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.Alert {
+    margin-top: 10px;
+}
+
+.Alert.warning {
+    color: #e74c3c;
+}
+
+.linkContainer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1rem;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.Row {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.formColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.SignUpCol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.fillerImage {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
