@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import homeStyles from '../styles/HomePage.module.css';
 import buttonStyles from '../styles/Button.module.css';
+import signinImage from '../media/signin.jpg';
+import signupImage from '../media/signup.jpg';
 
 const HomePage = () => {
   return (
@@ -17,11 +19,13 @@ const HomePage = () => {
       <div className={homeStyles.buttonsContainer}>
         <div className={homeStyles.leftSide}>
           <div className={homeStyles.imageContainer}>
-            <img
-              className={homeStyles.image}
-              src=""
-              alt="Sign In"
-            />
+            <Link to="/signin">
+              <img
+                className={homeStyles.image}
+                src={signinImage}
+                alt="Sign In"
+              />
+            </Link>
           </div>
           <Link to="/signin" className={`${buttonStyles.button} ${homeStyles.signIn}`}>
             Sign In
@@ -30,11 +34,13 @@ const HomePage = () => {
 
         <div className={homeStyles.rightSide}>
           <div className={homeStyles.imageContainer}>
-            <img
-              className={homeStyles.image}
-              src="" 
-              alt="Sign Up"
-            />
+            <Link to="/signup">
+              <img
+                className={homeStyles.image}
+                src={signupImage}
+                alt="Sign Up"
+              />
+            </Link>
           </div>
           <Link to="/signup" className={`${buttonStyles.button} ${homeStyles.signUp}`}>
             Sign Up
