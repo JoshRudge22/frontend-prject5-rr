@@ -1,7 +1,9 @@
 import React from 'react';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 import Container from 'react-bootstrap/Container';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import HomePage from './pages/HomePage';
 import './App.css';
 
 function App() {
@@ -13,8 +15,12 @@ function App() {
 
         {/* Main content container */}
         <Container>
-          <h1>Welcome to the App!</h1>
-          <p>This is where your app content will go.</p>
+          <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route exact path="/signup" render={() => <h2>Needs working on</h2>} />
+            <Route exact path="/signin" render={() => <h2>Needs working on</h2>} />
+          </Switch>
+          <Footer />
         </Container>
       </div>
     </Router>

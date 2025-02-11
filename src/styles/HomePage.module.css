@@ -1,0 +1,47 @@
+.homePage {
+  text-align: center;
+  padding: 20px;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.leftSide, .rightSide {
+  width: 48%;
+  text-align: center;
+  position: relative;
+}
+
+.imageContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.signIn, .signUp {
+  display: block;
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+}
+
+.signIn:hover, .signUp:hover {
+  background-color: #0056b3;
+}
