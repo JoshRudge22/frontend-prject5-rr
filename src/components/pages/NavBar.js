@@ -15,13 +15,24 @@ const Navbar = () => {
               <Link className="nav-link active" to="/">Home</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" to="/">Sign Up</Link>
+              <Link className="nav-link active" to="signup">Sign Up</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" to="/">Sign In</Link>
+              <Link className="nav-link active" to="signin">Sign In</Link>
             </li>
           </ul>
         </div>
+
+        {/* Search Bar - Right Side */}
+        <form className="d-flex ms-auto">
+          <input
+            className="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button className="btn btn-outline-light" type="submit">Search</button>
+        </form>
       </div>
     </nav>
   );
