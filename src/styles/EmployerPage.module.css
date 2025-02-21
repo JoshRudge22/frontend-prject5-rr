@@ -1,0 +1,99 @@
+.employerPage {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .employerPage h1 {
+    font-size: 36px;
+    color: #333;
+  }
+  
+  .employerPage p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .buttonsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .buttonWrapper {
+    display: inline-block;
+  }
+  
+  .btnSignIn,
+  .btnSignUp {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #4caf50;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.2s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btnSignUp {
+    background-color: #2196f3;
+  }
+  
+  .btnSignIn:hover,
+  .btnSignUp:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  .btnSignUp:hover {
+    background-color: #1976d2;
+    transform: scale(1.05);
+  }
+  
+  .descriptionContainer {
+    margin-top: 40px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .descriptionContainer h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .descriptionContainer p {
+    font-size: 18px;
+    color: #444;
+  }
+  
+  .descriptionContainer ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .descriptionContainer li {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .employerPage {
+      padding: 20px;
+    }
+  
+    .buttonsContainer {
+      flex-direction: column;
+    }
+  
+    .buttonWrapper {
+      margin-bottom: 20px;
+    }
+  }
+  

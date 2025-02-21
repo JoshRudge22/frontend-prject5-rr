@@ -47,6 +47,13 @@ const HomePage = () => {
           </Link>
         </div>
       </div>
+      <div className={homeStyles.employerSection}>
+        <h2>Are you an Employer?</h2>
+        <p>If you are an employer looking to hire workers, sign up now to post your job openings and find the perfect candidates!</p>
+        <Link to="/employerpage" className={`${buttonStyles.button} ${homeStyles.employerButton}`}>
+          Post a Job
+        </Link>
+      </div>
     </div>
   );
 };
